@@ -7,9 +7,7 @@ function App() {
   return (
     <div
       className="min-h-screen flex flex-col bg-cover bg-center" // Tailwind classes for responsive background
-      style={{
-        backgroundImage: "url('./src/image/C.jpg')", // Adjust the path to your image
-      }}
+      
     >
       <Header />
       <main className="container mx-auto py-8 flex-grow">
