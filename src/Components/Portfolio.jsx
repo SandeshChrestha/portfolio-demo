@@ -53,9 +53,9 @@ const skills = [
 
 const Portfolio = () => {
     return (
-         <section id="projects" className="py-12 bg-white">
+        <section id="projects" className="py-12 bg-white">
             {/* Profile Section */}
-            <div className="container mx-auto px-4 flex flex-col md:flex-row items-center mb-12 space-y-8 md:space-y-0 md:space-x-8">
+            <div className="container mx-auto px-20 flex flex-col md:flex-row items-center mb-12 space-y-8 md:space-y-0 md:space-x-8">
                 {/* About Me Section */}
                 <div className="md:w-1/2 text-center md:text-left md:pr-8 mb-8 md:mb-0">
                     <h2 className="text-3xl font-bold mb-4">About Me</h2>
@@ -69,15 +69,21 @@ const Portfolio = () => {
                 {/* Profile Photo */}
                 <div className="md:w-1/2 flex justify-center md:justify-end">
                     <img
-                        src="./src/image/car.jpg" // Replace with your actual photo URL
+                        src="./src/image/car.JPG" // Replace with your actual photo URL
                         alt="Your Name"
                         className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg object-cover"
                     />
                 </div>
             </div>
-             {/* Skills Section */}
-             <div className="container mx-auto px-4 mb-12">
-                <h2 className="text-3xl font-bold mb-4 text-center">My Skills</h2>
+
+            {/* Skills Section */}
+            <div className="container mx-auto px-20 mb-12">
+                {/* Centering Title */}
+                <div className="flex justify-center mb-8">
+                    <h2 className="text-3xl font-serif text-center py-3 px-6 border text-white bg-zinc-900 rounded">
+                        My Skills
+                    </h2>
+                </div>
                 <div className="space-y-4">
                     {skills.map((skill, index) => (
                         <div key={index}>
