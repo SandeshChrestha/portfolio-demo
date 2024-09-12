@@ -43,9 +43,17 @@ const projects = [
     // Add more projects as needed
 ];
 
+const skills = [
+    { name: 'JavaScript', level: '80%' },
+    { name: 'React', level: '50%' },
+    { name: 'CSS', level: '70%' },
+    { name: 'Node.js', level: '50%' },
+    // Add more skills as needed
+];
+
 const Portfolio = () => {
     return (
-        <section className="py-12 bg-white">
+         <section id="projects" className="py-12 bg-white">
             {/* Profile Section */}
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center mb-12 space-y-8 md:space-y-0 md:space-x-8">
                 {/* About Me Section */}
@@ -67,6 +75,27 @@ const Portfolio = () => {
                     />
                 </div>
             </div>
+             {/* Skills Section */}
+             <div className="container mx-auto px-4 mb-12">
+                <h2 className="text-3xl font-bold mb-4 text-center">My Skills</h2>
+                <div className="space-y-4">
+                    {skills.map((skill, index) => (
+                        <div key={index}>
+                            <div className="flex justify-between mb-1">
+                                <span className="text-lg font-medium">{skill.name}</span>
+                                <span className="text-sm text-gray-600">{skill.level}</span>
+                            </div>
+                            <div className="w-full bg-gray-200 rounded-full h-4">
+                                <div
+                                    className="bg-blue-600 h-4 rounded-full"
+                                    style={{ width: skill.level }}
+                                ></div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
 
             {/* Portfolio Section */}
             <div className="container mx-auto px-4">
