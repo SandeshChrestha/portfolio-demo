@@ -4,40 +4,40 @@ import ProjectCard from './ProjectCard';
 
 const projects = [
     {
-        image: "https://picsum.photos/id/1011/600/400",
-        title: "Project One",
+        image: "/image/1.jpeg",
+        title: "E-commerce website ",
         description: "A short description of project one.",
-        link: "#"
+        link: "https://github.com/SandeshChrestha/E-commerce-website"
     },
     {
-        image: "https://picsum.photos/id/1027/600/400",
-        title: "Project Two",
+        image: "/image/2.jpeg",
+        title: "React Todo list app",
         description: "A short description of project two.",
-        link: "#"
+        link: "https://github.com/SandeshChrestha/React-todo-list"
     },
     {
-        image: "https://picsum.photos/id/1027/600/400",
-        title: "Project Two",
+        image: "/image/3.jpeg",
+        title: "Advance-Programming-e-commercewebsite ",
         description: "A short description of project two.",
-        link: "#"
+        link: "https://github.com/SandeshChrestha/Advance-Programming-e-commercewebsite"
     },
     {
-        image: "https://picsum.photos/id/1027/600/400",
-        title: "Project Two",
+        image: "/image/4.jpeg",
+        title: "Data-Analysis",
         description: "A short description of project two.",
-        link: "#"
+        link: "https://github.com/SandeshChrestha/Data-Analysis-python"
     },
     {
-        image: "https://picsum.photos/id/1027/600/400",
-        title: "Project Two",
+        image: "/image/5.jpeg",
+        title: "Python-Project",
         description: "A short description of project two.",
-        link: "#"
+        link: "https://github.com/SandeshChrestha/Python-Project"
     },
     {
-        image: "https://picsum.photos/id/1027/600/400",
-        title: "Project Two",
+        image: "/image/6.jpeg",
+        title: "React-Weather-app",
         description: "A short description of project two.",
-        link: "#"
+        link: "https://github.com/SandeshChrestha/React-Weather-app"
     },
 
     // Add more projects as needed
@@ -62,14 +62,14 @@ const Portfolio = () => {
                     <p className="text-gray-700 leading-relaxed">
                         I'm Sandesh Shrestha, a passionate developer with experience in building responsive web applications.
                         I love working with modern technologies and creating efficient solutions. My goal is to leverage
-                        my skills to make a positive impact through technology. When I'm not coding.
+                        my skills to make a positive impact through technology. 
                     </p>
                 </div>
 
                 {/* Profile Photo */}
                 <div className="md:w-1/2 flex justify-center md:justify-end">
                     <img
-                        src="./src/image/car.JPG" // Replace with your actual photo URL
+                        src="/image/sandesh.JPG" // Replace with your actual photo URL
                         alt="Your Name"
                         className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg object-cover"
                     />
