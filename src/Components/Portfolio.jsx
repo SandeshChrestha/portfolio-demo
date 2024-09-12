@@ -77,7 +77,7 @@ const Portfolio = () => {
             </div>
 
             {/* Skills Section */}
-            <div className="container mx-auto px-20 mb-12">
+            <div className="container mx-auto px-40 mb-12">
                 {/* Centering Title */}
                 <div className="flex justify-center mb-8">
                     <h2 className="text-3xl font-serif text-center py-3 px-6 border text-white bg-zinc-900 rounded">
